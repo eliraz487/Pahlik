@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Pahlik</string>
+    <string name="level">תפקיד</string>
+    <string name="logout">התנתק</string>
+    <string name="create_malfunction">יצירת תקלה חדשה</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="username">שם משתמש</string>
+    <string name="password">סיסמא</string>
+    <string name="all_malfunction">כל התקלות</string>
+    <string name="users">משתמשים</string>
+    <string name="Description_Malfunction">פירוט התקלה</string>
+    <string name="malfunction_location">מיקום התקלה</string>
+    <string name="no_account_create_one">צור חשבון חדש</string>
+    <string name="forgot_your_password">שכחתי את הסיסמא?</string>
+    <string name="registration">הרשמה</string>
+    <string name="email">איימל</string>
+    <string name="submit">הירשם</string>
+    <string name="already_have_an_account_login">כבר יש לי משתמש</string>
+    <string name="login">התחברות</string>
+    <string name="login_to_system">התחבר למערכת</string>
+    <string name="developer_text">פותח ע\"י פלחיק 696</string>
+    <string name="solved">נפתרה</string>
+    <string name="search">חיפוש לפי שם פותח התקלה</string>
+    <string name="contact_phone">מספר איש קשר</string>
+    <string name="contact">שם איש קשר</string>
+    <string name="default_web_client_id">697707005264-5skj4ndgc94u3o64e3v0q6rqig5jrhp5.apps.googleusercontent.com</string>
+
+</resources>

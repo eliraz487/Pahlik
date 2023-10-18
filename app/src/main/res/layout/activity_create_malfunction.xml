@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_page"
+    tools:context=".CreateMalfunction">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+  <!-- ImageView at the top -->
+  <ImageView
+      android:id="@+id/topImageView"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:layout_marginBottom="32dp"
+      android:adjustViewBounds="true"
+      android:src="@drawable/phalik" />
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+
+      android:layout_height="1150dp"
+      android:layout_below="@id/topImageView"
+      android:background="@drawable/background_layout"
+      >
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/malfunctionNameInputLayout"
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:textSize="24dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="32dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/malfunctionName"
+        android:hint="שם התקלה"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_text_backgroud"
+        android:layout_height="50dp"
+        android:paddingRight="8dp"
+        android:maxLength="20"
+        android:inputType="textShortMessage" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+      <Spinner
+          android:id="@+id/spinner_system"
+          android:layout_width="300dp"
+          android:paddingEnd="30dp"
+          android:layout_height="70dp"
+          android:dropDownVerticalOffset="40dp"
+          android:layout_margin="16dp"
+          android:layout_below="@+id/malfunctionNameInputLayout"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/bg_spiner"
+          android:dropDownWidth="280dp"
+          android:scrollbarSize="15dp" />
+
+      <Spinner
+          android:id="@+id/spinner_malfunction"
+          android:layout_width="300dp"
+          android:paddingEnd="30dp"
+          android:layout_height="70dp"
+          android:dropDownVerticalOffset="40dp"
+          android:layout_margin="16dp"
+          android:layout_below="@+id/spinner_system"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/bg_spiner"
+          android:dropDownWidth="280dp"
+          android:scrollbarSize="15dp" />
+
+  <!-- Title EditText -->
+
+    <!-- Box Text EditText -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleTextInputLayout"
+
+        android:layout_below="@+id/spinner_malfunction"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/location"
+
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/edit_text_backgroud"
+          android:hint="@string/malfunction_location"
+          android:inputType="textShortMessage"
+          android:maxLength="20"
+          android:paddingRight="8dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contact_TextInputLayout"
+
+        android:layout_below="@+id/titleTextInputLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/contact"
+
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/edit_text_backgroud"
+          android:hint="@string/contact"
+          android:inputType="textShortMessage"
+          android:maxLength="20"
+          android:paddingRight="8dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contact_phoneTextInputLayout"
+
+        android:layout_below="@+id/contact_TextInputLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/contact_phone"
+
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@drawable/edit_text_backgroud"
+          android:hint="@string/contact_phone"
+          android:inputType="phone|number"
+          android:maxLength="20"
+          android:paddingRight="8dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/boxTextInputLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp"
+      android:layout_below="@+id/contact_phoneTextInputLayout"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Description"
+        android:gravity="top"
+        android:hint="@string/Description_Malfunction"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_text_backgroud"
+        android:layout_height="150dp"
+        android:paddingRight="8dp"
+        android:maxLength="20"
+        android:inputType="textMultiLine" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/solution_boxTextInputLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/boxTextInputLayout"
+        >
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/solution"
+          android:gravity="top"
+          android:hint="פתרון התקלה"
+          android:layout_width="match_parent"
+          android:background="@drawable/edit_text_backgroud"
+          android:layout_height="150dp"
+          android:paddingRight="8dp"
+          android:maxLength="20"
+          android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+  <Switch
+      android:id="@+id/switch_solved"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="32dp"
+      android:layout_height="wrap_content"
+      android:visibility="gone"
+      android:layout_below="@+id/solution_boxTextInputLayout"
+      android:text="@string/solved"
+      tools:ignore="UseSwitchCompatOrMaterialXml" />
+  <Button
+      android:id="@+id/saveMalfunction"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/switch_solved"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="32dp"
+      android:text="Save" />
+
+
+  </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

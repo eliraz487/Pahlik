@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/blue_backgroud">
+
+                <EditText
+                    android:id="@+id/editTextSearch"
+                    android:hint="חיפוש לפי שם"
+                    android:layoutDirection="rtl"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/color"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/black"
+                    android:layout_width="320dp"
+                    android:drawableEnd="@drawable/search_icon"
+                    android:layout_marginTop="80dp"
+                    android:layout_height="60dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listViewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginTop="12dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            android:layout_below="@id/top_view" />
+
+</RelativeLayout>

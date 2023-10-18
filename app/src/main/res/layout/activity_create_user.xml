@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_page"
+    tools:context=".CreateMalfunction">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <!-- ImageView at the top -->
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/phalik" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="680dp"
+        android:layout_below="@id/topImageView"
+        android:background="@drawable/background_layout"
+        >
+
+    <!-- First Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstNameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="שם פרטי">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            tools:text="John" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Last Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastNameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNameLayout"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="שם משפחה">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            tools:text="Doe" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Phone Number -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumberLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastNameLayout"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="טלפון">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLines="1"
+            tools:text="123-456-7890" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Job Title -->
+
+    <!-- Rank -->
+
+    <!-- Additional Fields -->
+
+    <!-- Add more text fields here as needed -->
+    <Spinner
+        android:id="@+id/spinnerJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumberLayout"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="עבודה"
+        />
+
+
+    <!-- Spinner for Level -->
+    <Spinner
+        android:id="@+id/spinnerLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerJob"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="דרגה"
+        />
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/spinnerLevel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="שמור" />
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
